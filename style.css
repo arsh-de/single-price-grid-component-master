@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan-2: hsl(179, 61%, 38%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+    background-color: var(--Light-Gray);
+}
+
+.container {
+    width: 85%;
+    margin: 4rem 0;
+}
+
+.header {
+    padding: 1.5rem;
+    background-color: white;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.heading-1 {
+    font-size: large;
+    color: var(--Cyan);
+    margin-bottom: 1.25rem;
+}
+
+.heading-2 {
+    font-size: medium;
+    margin-bottom: 1.25rem;
+    color: var(--Bright-Yellow);
+}
+
+.about-us {
+    width: 90%;
+    font-size: 15px;
+    line-height: 1.5rem;
+    color: var(--Grayish-Blue);
+}
+
+.pricing-box {
+    padding: 1.5rem;
+    background-color: var(--Cyan-2);
+}
+
+.pricing-heading {
+    color: white;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.price {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    margin-bottom: .5rem;
+    color: var(--Cyan);
+}
+
+.price-dollar {
+    color: white;
+    font-size: xx-large;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.price-perDay {
+    margin-bottom: 1.5rem;
+    color: var(--Light-Gray);
+}
+
+.sign-up {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: .25rem;
+    font-family: "Karla", sans-serif;
+    background-color: var(--Bright-Yellow);
+}
+
+.benefits-box {
+    padding: 1.5rem;
+    background-color: var(--Cyan);
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.benefits-heading {
+    color: white;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.benefits {
+    list-style: none;
+    font-size: small;
+    color: var(--Light-Gray);
+}
+
+.benefits li {
+    padding-bottom: .25rem;
+}
+
+@media(min-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 625px;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+    .pricing-box {
+        width: 50%;
+        padding: 2rem;
+        border-bottom-left-radius: .5rem;
+    }
+
+    .benefits-box {
+        width: 50%;
+        padding: 2rem;
+        border-bottom-left-radius: 0;
+    }
+}
