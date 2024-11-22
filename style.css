@@ -2,7 +2,7 @@
 
 :root {
     --Cyan: hsl(179, 62%, 43%);
-    --Cyan-2: hsl(179, 61%, 38%);
+    --Cyan-2: hsl(178, 43%, 54%);
     --Bright-Yellow: hsl(71, 73%, 54%);
     --Light-Gray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%);
@@ -56,7 +56,7 @@ body {
 
 .pricing-box {
     padding: 1.5rem;
-    background-color: var(--Cyan-2);
+    background-color: var(--Cyan);
 }
 
 .pricing-heading {
@@ -70,7 +70,7 @@ body {
     font-size: 14px;
     align-items: center;
     margin-bottom: .5rem;
-    color: var(--Cyan);
+    color: var(--Cyan-2);
 }
 
 .price-dollar {
@@ -99,7 +99,7 @@ body {
 
 .benefits-box {
     padding: 1.5rem;
-    background-color: var(--Cyan);
+    background-color: var(--Cyan-2);
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
 }
@@ -125,7 +125,7 @@ body {
     .container {
         display: flex;
         flex-direction: column;
-        max-width: 625px;
+        max-width: 650px;
     }
 
     .content {
@@ -134,18 +134,26 @@ body {
     }
 
     .header {
-        padding: 2rem;
+        padding: 3rem 2rem;
+    }
+
+    .heading-1 {
+        font-size: x-large;
+    }
+
+    .heading-2 {
+        font-size: larger;
     }
 
     .pricing-box {
         width: 50%;
-        padding: 2rem;
+        padding: 2.5rem;
         border-bottom-left-radius: .5rem;
     }
 
     .benefits-box {
         width: 50%;
-        padding: 2rem;
+        padding: 2.5rem;
         border-bottom-left-radius: 0;
     }
 }
